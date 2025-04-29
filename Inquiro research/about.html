@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AI Research Hub</title>
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header img {
+            max-height: 90px;
+            width: auto;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .content {
+            max-width: 800px;
+            background-color: white;
+            padding: 50px 40px;
+            border-radius: 12px;
+            margin: 60px auto;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 2.5em;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+        .content p {
+            color: #6b7280;
+            font-size: 1.2em;
+            line-height: 1.7;
+        }
+      
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                margin-top: 15px;
+                justify-content: center;
+                width: 100%;
+            }
+            header img {
+                max-width: 150px;
+            }
+            .content {
+                padding: 30px 20px;
+                margin: 30px 20px;
+            }
+            .content h2 {
+                font-size: 2em;
+            }
+            .content p {
+                font-size: 1.1em;
+            }
+        }
+        nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #a5b4fc;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%; /* Full underline on hover */
+}
+
+nav a:hover {
+    color: #a5b4fc;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Screenshot__41_-removebg-preview.png" alt="AI Research Hub Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h2>About us</h2>
+    <p>
+        At Researcher, we are committed to providing comprehensive insights into artificial intelligence (AI) technologies 
+        and their applications across various industries. Our goal is to help businesses and individuals stay ahead in the rapidly 
+        evolving tech landscape by offering the latest research, in-depth analysis, and expert opinions on AI developments.
+    </p>
+    <p>
+        We cover AI topics such as Machine Learning, Deep Learning, Natural Language Processing (NLP), and much more. 
+        Whether you're looking to understand the basics or explore advanced AI concepts, we aim to deliver clear and informative content 
+        to support your learning journey.
+    </p>
+    <p>
+        Join us as we explore the future of technology and AI’s role in transforming industries worldwide.
+    </p>
+</div>
+<footer>
+    <p>&copy; 2025 AI Research Hub | All Rights Reserved</p>
+ 
+</footer>
+</body>
+</html>
